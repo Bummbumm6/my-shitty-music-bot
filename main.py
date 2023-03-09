@@ -4,7 +4,7 @@ from moviepy import editor
 from discord.ext.commands import Bot
 bot = Bot("b!",intents=discord.Intents.all())
 check = False
-token = "MTA1NDA0NzcxMjkyMTc5NjcxMQ.GPvYcn.hgmsaIEiz-M0c-hvzWRaDJyfyqm4f3QIJXOy7A"
+token = os.environ["TOKEN"]
 @bot.command()
 async def play(ctx, arg):
     check = False
